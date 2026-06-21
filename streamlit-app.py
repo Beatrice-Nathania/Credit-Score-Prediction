@@ -49,8 +49,8 @@ col1, col2, col3 = st.columns(3)
 with col1:
     st.markdown("### 👤 Identity & Basic Info")
     unnamed_0 = 0
-    id_val = st.text_input("ID", "0x20c27")
-    customer_id = st.text_input("Customer ID", "CUS_0xf64")
+    id_val = 0
+    customer_id = 0
     name = st.text_input("Customer Name", "Beatrice")
     ssn = st.text_input("SSN", "478-73-8323")
     age = st.text_input("Age (Raw String)", "32")
