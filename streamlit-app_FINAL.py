@@ -77,7 +77,7 @@ with col3:
     credit_mix = st.selectbox("Credit Mix", ["Good", "Standard", "Bad"])
     credit_utilization_ratio = st.number_input("Credit Utilization Ratio", min_value=0.0, value=32.01418)
     credit_history_age = st.text_input("Credit History Age", "28 Years and 10 Months")
-    payment_of_min_amount = st.selectbox("Payment of Minimum Amount", ["Yes", "No", "NM"])
+    payment_of_min_amount = st.selectbox("Payment of Minimum Amount", ["Yes", "No"])
     total_emi_per_month = st.number_input("Total EMI per Month", min_value=0.0, value=81.8228)
     amount_invested_monthly = st.number_input("Amount Invested Monthly", 182.0655)
     payment_behaviour = st.selectbox("Payment Behaviour", [
@@ -86,8 +86,7 @@ with col3:
         "High_spent_Large_value_payments",
         "Low_spent_Medium_value_payments",
         "Low_spent_Small_value_payments",
-        "Low_spent_Large_value_payments",
-        "!@9_#"
+        "Low_spent_Large_value_payments"
     ])
     monthly_balance = st.text_input("Monthly Balance", "473.6241")
 
