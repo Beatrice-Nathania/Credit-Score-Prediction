@@ -59,14 +59,14 @@ with col1:
 
 with col2:
     st.markdown("### 💰 Income & Debt Banking")
-    annual_income = st.text_input("Annual Income", "56125.5")
+    annual_income = st.number_input("Annual Income", 56125.5)
     monthly_inhand_salary = st.number_input("Monthly Inhand Salary", min_value=0.0, value=4875.125)
     num_bank_accounts = st.number_input("Number of Bank Accounts", min_value=0, value=8)
     num_credit_card = st.number_input("Number of Credit Cards", min_value=0, value=3)
     interest_rate = st.number_input("Interest Rate (%)", min_value=0, value=18)
     num_of_loan = st.number_input("Number of Loans", 2)
     type_of_loan = st.text_input("Type of Loans", "Credit-Builder Loan, and Mortgage Loan")
-    outstanding_debt = st.number_input("Outstanding Debt", "370.22")
+    outstanding_debt = st.number_input("Outstanding Debt", 370.22)
 
 with col3:
     st.markdown("### 📊 Credit Behavior History")
@@ -88,7 +88,7 @@ with col3:
         "Low_spent_Small_value_payments",
         "Low_spent_Large_value_payments"
     ])
-    monthly_balance = st.text_input("Monthly Balance", "473.6241")
+    monthly_balance = st.number_input("Monthly Balance", 473.6241)
 
 
 # ===== PREDICT BUTTON =====
