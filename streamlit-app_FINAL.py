@@ -53,7 +53,7 @@ with col1:
     customer_id = 0
     name = st.text_input("Customer Name", "Beatrice")
     ssn = 0
-    age = st.text_input("Age", "32")
+    age = st.number_input("Age", 32)
     month = st.selectbox("Month", ["January", "February", "March", "April", "May", "June", "July", "August"])
     occupation = st.text_input("Occupation", "Doctor")
 
@@ -64,22 +64,22 @@ with col2:
     num_bank_accounts = st.number_input("Number of Bank Accounts", min_value=0, value=8)
     num_credit_card = st.number_input("Number of Credit Cards", min_value=0, value=3)
     interest_rate = st.number_input("Interest Rate (%)", min_value=0, value=18)
-    num_of_loan = st.text_input("Number of Loans", "2")
+    num_of_loan = st.number_input("Number of Loans", 2)
     type_of_loan = st.text_input("Type of Loans", "Credit-Builder Loan, and Mortgage Loan")
-    outstanding_debt = st.text_input("Outstanding Debt", "370.22")
+    outstanding_debt = st.number_input("Outstanding Debt", "370.22")
 
 with col3:
     st.markdown("### 📊 Credit Behavior History")
     delay_from_due_date = st.number_input("Delay from Due Date (Days)", min_value=0, value=30)
-    num_of_delayed_payment = st.text_input("Number of Delayed Payments", "14")
-    changed_credit_limit = st.text_input("Changed Credit Limit", "17.89")
+    num_of_delayed_payment = st.number_input("Number of Delayed Payments", 14)
+    changed_credit_limit = st.number_input("Changed Credit Limit", 17.89)
     num_credit_inquiries = st.number_input("Number of Credit Inquiries", min_value=0.0, value=4.0)
-    credit_mix = st.selectbox("Credit Mix", ["Good", "Standard", "Bad", "_"])
+    credit_mix = st.selectbox("Credit Mix", ["Good", "Standard", "Bad"])
     credit_utilization_ratio = st.number_input("Credit Utilization Ratio", min_value=0.0, value=32.01418)
     credit_history_age = st.text_input("Credit History Age", "28 Years and 10 Months")
     payment_of_min_amount = st.selectbox("Payment of Minimum Amount", ["Yes", "No", "NM"])
     total_emi_per_month = st.number_input("Total EMI per Month", min_value=0.0, value=81.8228)
-    amount_invested_monthly = st.text_input("Amount Invested Monthly", "182.0655")
+    amount_invested_monthly = st.number_input("Amount Invested Monthly", 182.0655)
     payment_behaviour = st.selectbox("Payment Behaviour", [
         "High_spent_Medium_value_payments",
         "High_spent_Small_value_payments",
